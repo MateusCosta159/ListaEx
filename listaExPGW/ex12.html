@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex12</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh; 
+            align-content: center;  
+            gap: 20px;  
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+        
+        .item:first-child{
+            flex-grow: 2;
+            
+        }
+        .item:nth-child(3){
+            flex-shrink: 3;
+        }
+        .item:nth-child(2){
+           flex-basis: 150px;
+        }
+        .item:first-child{
+            align-self: flex-end;
+            
+        }
+        .item:nth-child(3){
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>As Div ficaram todas centralizadas, mas Div Item 3 ficou em primeiro do que a Div Item 1 e tem um pequeno espaço entre as duas, e as duas mantem um espaço da Div Item 2</p>
+
+    
+</body>
+</html>

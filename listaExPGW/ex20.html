@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex20</title>
+
+    <style>
+
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        .item{
+            flex: 1 1 200px;
+            box-sizing: border-box;
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+            align-self: stretch;
+        }
+        .item:nth-child(2){
+            flex-grow: 2;
+        }
+        .item:nth-child(4){
+            order: -1;
+            flex-basis: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+
+    </div>
+    <p>
+       Os itens ficaram em coluna, com Item 4 ficando em primeiro e ocupando um espaço maior, logo vem 
+       os itens 1, 2(que pode crescer se for necessário), 3 nessa ordem 
+    </p>
+
+    
+</body>
+</html>

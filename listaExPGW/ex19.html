@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex19</title>
+
+    <style>
+
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>
+       Deixou os itens 1 e 2 alinhados Horizontalmente e divindo espaço, já o item 3 ficou na parte de baixo deles, ocupando da tela inteira 
+    </p>
+
+    
+</body>
+</html>
